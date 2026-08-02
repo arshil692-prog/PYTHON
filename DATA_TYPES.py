@@ -258,5 +258,258 @@ c = float(b)
 print(type(c))
 d = str(c)
 print(type(d))
-"""
+
 # 34///
+list1 = [1,2,3,4]
+print("its a list",list1)
+tuple1 = (11,22,33,44,55)
+print("its a tuple",tuple1)
+# answer > list is mutable and tuple is immutable
+
+
+# 35///
+# answer >  list is set of coolection of data types that why python allow to store diffrent data types. 
+
+
+# 36///
+value = eval(input("enter any value:"))
+print(value)
+print(type(value))
+# for any type of data had to know use eval 
+
+# 37///
+int_var = 10
+float_var = 89.00
+complex_var = 12j
+bool_var = True
+str_var = "arshil"
+list_var = [1,22,3]
+set_var = {11,22,33}
+frozenset_var = frozenset({11,22,33})
+tuple_var = (1,2,3)
+dict_var = {"name":"arshil","age":19}
+bytes_var = b"hello"
+bytearray_var = bytearray(b"hello")
+None_var = None
+memoryview_var = memoryview(b"hello")
+range_var = range(10)
+
+print(type(int_var))
+print(type(float_var))
+print(type(complex_var))
+print(type(bool_var))
+print(type(str_var))
+print(type(list_var))
+print(type(set_var))
+print(type(frozenset_var))
+print(type(tuple_var))
+print(type(dict_var))
+print(type(bytes_var))
+print(type(bytearray_var))
+print(type(None_var))
+print(type(memoryview_var))
+print(type(range_var))
+
+# 38////
+# fix the error
+#a = "25"
+#b = 10
+#c = a + b
+#print(type(c))
+
+# answer > 
+a = 25
+b = 10
+c = a + b
+print(type(c))
+
+# 39///
+name = "rahul sharma"
+age = 26
+salery = 20000.00
+marrieds_status = True
+
+print("name:",name,type(name))
+print("age:",age,type(age))
+print("salery:",salery,type(salery))
+print("married status:",marrieds_status,type(marrieds_status))
+
+
+# 40///
+value = eval(input("Enter any value:"))
+print("value:",value,type(value))
+
+# 1, print(value)
+# 2, print("type:",type(value))
+
+# 41////
+
+print("=======MENU=======")
+print("1. convert to integer")
+print("2. convert to float")
+print("3. convert to string")
+print("4. convert to boolean")
+print("5. program exited")
+
+choise = int(input("Enter your choise:"))
+
+if choise == 1:
+    value = input("Enter your value:")
+    print("converted value:",int(value))
+    print("data type:",type(int(value)))
+
+elif choise == 2:
+    value = input("Enter your value:")
+    print("converted value:",float(value))
+    print("data type:",type(float(value)))
+
+elif choise == 3:
+    value = input("Enter your value:")
+    print("converted value:",str(value))
+    print("data type:",type(str(value)))
+
+elif choise == 4:
+    value = input("Enter your value:")
+    print("converted value:",bool(value))
+    print("data type:",type(bool(value)))
+
+elif choise == 5:
+    print("program exited")     
+
+else:
+
+
+# 42////
+
+ 1. type()
+
+Returns the actual type.
+
+a = 10
+
+print(type(a))
+
+Output
+
+<class 'int'>
+
+
+ 2.isinstance()
+
+Returns only True or False.
+
+a = 10
+
+print(isinstance(a, int))
+
+Output
+
+True
+
+# 43////
+
+# Program to display all immutable data types with sample values
+
+# Immutable Data Types
+int_var = 100
+float_var = 99.99
+complex_var = 3 + 4j
+bool_var = True
+str_var = "Hello Python"
+tuple_var = (10, 20, 30)
+range_var = range(1, 6)
+frozenset_var = frozenset({1, 2, 3})
+bytes_var = b"Python"
+none_var = None
+
+print("===== Immutable Data Types =====")
+
+print("Integer     :", int_var, "|", type(int_var))
+print("Float       :", float_var, "|", type(float_var))
+print("Complex     :", complex_var, "|", type(complex_var))
+print("Boolean     :", bool_var, "|", type(bool_var))
+print("String      :", str_var, "|", type(str_var))
+print("Tuple       :", tuple_var, "|", type(tuple_var))
+print("Range       :", range_var, "|", type(range_var))
+print("Frozen Set  :", frozenset_var, "|", type(frozenset_var))
+print("Bytes       :", bytes_var, "|", type(bytes_var))
+print("None        :", none_var, "|", type(none_var))
+
+# 44///
+# Mutable Data Types
+list_var = [10, 20, 30]
+dict_var = {"name": "Arshil", "age": 21}
+set_var = {1, 2, 3}
+bytearray_var = bytearray(b"Python")
+
+print("===== Mutable Data Types =====")
+
+print("List       :", list_var, "|", type(list_var))
+print("Dictionary :", dict_var, "|", type(dict_var))
+print("Set        :", set_var, "|", type(set_var))
+print("Bytearray  :", bytearray_var, "|", type(bytearray_var))
+
+# 45///
+A CSV file stores all values as strings. Explain how you would convert each field to the correct data type before processing.
+# ANSWER > 
+A CSV (Comma Separated Values) file stores every value as text (string), regardless of whether the value represents a number, Boolean, or date. Before processing the data, each field should be converted to its appropriate data type so that calculations, comparisons, and logical operations work correctly.
+
+Example CSV Data
+Name,Age,Salary,Married
+Arshil,21,45000.50,True
+
+When Python reads this row from a CSV file, it treats every value as a string.
+
+name = "Arshil"
+age = "21"
+salary = "45000.50"
+married = "True"
+
+To use these values correctly, convert them to their proper data types.
+
+# 46///
+Why is bool considered a subclass of int in Python? Explain with examples.
+
+In Python, the bool data type is a subclass of int, which means Boolean values (True and False) behave like integers.
+
+True is equivalent to 1
+False is equivalent to 0
+
+Because of this relationship, Boolean values can be used in arithmetic operations.
+
+# 47///
+in book 
+
+# 48////
+A Python program that accepts user input may raise a TypeError if mathematical operations are performed on incompatible data types.
+Since the input() function always returns a string, values must be converted to the correct numeric data type before calculations.
+
+# ANSWER >
+1.
+Wrong
+age = input("Enter Age: ")
+result = age + 5
+
+Error
+TypeError: can only concatenate str (not "int") to str
+
+Correct
+age = int(input("Enter Age: "))
+result = age + 5
+
+2.
+Wrong
+a = "10"
+b = 20
+
+print(a + b)
+
+Error
+TypeError
+
+Correct
+a = int(a)
+
+print(a + b)
+"""
+# 49////
