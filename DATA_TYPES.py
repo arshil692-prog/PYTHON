@@ -513,3 +513,54 @@ a = int(a)
 print(a + b)
 """
 # 49////
+
+name = input("Enter your name:")
+age = int (input("Enter ypur age :"))
+percentage = float(input("Enter your percentage:"))
+passed = input("passed(True/False):")== "True"
+
+print("name:",name)
+print("age:",age)
+print("percentage:",percentage)
+print("passed:",passed)
+
+print(type(name))
+print(type(age))
+print(type(percentage))
+print(type(passed))
+
+# 50////
+
+def analyze_variable(var):
+    mutable_type = (list,dict,set,bytearray)
+    immutable_type = (int,float,bool,str,complex,tuple,frozenset,bytes)
+
+    if isinstance(var,mutable_type):
+        mutability = "Mutable"
+    elif isinstance(var,immutable_type):
+        mutability = "Immutable"
+    else:
+        mutability = "unknown" 
+
+    if isinstance(var, bool):
+        category = "Boolean"
+    elif isinstance(var, (int, float, complex)):
+        category = "Numeric"
+    elif isinstance(var, (str, list, tuple, range)):
+        category = "Sequence"
+    elif isinstance(var, dict):
+        category = "Mapping"
+    elif isinstance(var, (set, frozenset)):
+        category = "Set"
+    elif isinstance(var, (bytes, bytearray, memoryview)):
+        category = "Binary"
+    else:
+        category = "Other"
+
+    return {
+        "Value": var,
+        "Data Type": type(var).__name__,
+        "Mutability": mutability,
+        "Category": category
+    }
+
