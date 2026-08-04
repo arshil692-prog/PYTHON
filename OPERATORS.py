@@ -192,7 +192,7 @@ print(True or False)
 
 # 30////
 print(not True)
-"""
+
 # 31////
 marks = float(input("Enter your marks:"))
 attendence = float(input("Enter your attendence:"))
@@ -201,3 +201,95 @@ if marks >= 35.00 and attendence >= 75.00:
     print("pass:","marks of student",marks,"attendece",attendence)
 else:
     print("unknow student")
+
+# ones agian but in diffrent way
+
+marks = int(input("Enter your marks:"))
+attendence = int(input("Enter your attendence:"))
+
+if marks >=35 and attendence >=75:
+    print("student is pass:",marks,"student is regular",attendence)
+elif marks >=35 and attendence <=75:
+    print("student is pass:",marks,"but not regular:",attendence) 
+elif marks <=35 and attendence >=75:
+    print("student is not pass:",marks,"but student is regular:",attendence)
+elif marks <=35 and attendence <=75:
+    print("student is not pass:",marks,"student is also not regular:",attendence)
+else:
+    print("not eligible")
+
+# 32////
+age = int(input("Enter your age:"))
+citizen = input("citizen (yes/no):")
+
+if age >=18 and citizen == "yes":
+    print("you can vote")
+elif age>=18 and citizen == "no":
+    print("can not vote : adult ","not citizen")
+elif age<=18 and citizen == "yes":
+    print("can not vote : minior","but citizen")
+elif age<=18 and citizen == "no":
+    print("cannot vote , minior:","not a citizen")
+else:
+    print("unknow id")
+
+# 33////
+num = 20
+
+print("Original:", num)
+
+num += 5
+print("After += :", num)
+
+num -= 3
+print("After -= :", num)
+
+num *= 2
+print("After *= :", num)
+
+num /= 4
+print("After /= :", num)
+
+num //= 2
+print("After //= :", num)
+
+num %= 3
+print("After %= :", num)
+
+num **= 2
+print("After **= :", num)
+
+# 34///
+num = int(input("Enter the number:"))
+print("orignal num:",num)
+
+num += 5
+print("after add 5:", num)
+
+num -=2
+print("after subtract 2:",num)
+
+num *=3
+print("after ,multiple by3:",num)
+
+num /= 2
+print("after the divide:",num)
+
+# 35///
+x = 10
+x += 5
+print(x)
+
+# 36///
+age = int(input("Enter your age:"))
+citizen = input("citizen (yes/no):")
+
+if age >=18 and citizen == "yes":
+    print("you can vote")
+elif age>=18 or citizen == "no":
+    print("can not vote : adult ","not citizen")
+elif age<18 not citizen == "no":
+    print("cannot vote , minior:","not a citizen")
+else:
+    print("unknow id")
+"""
