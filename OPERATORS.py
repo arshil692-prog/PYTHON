@@ -166,5 +166,38 @@ print("greter then:",10>1)
 print("less then:",5<10)
 print("greter then equal:",11>=10)
 print("less then equal:",1<=33)
-"""
+
 # 27///
+# their are 3 types of logical operators 
+1.and
+2.or
+3.not
+# ANSWER 1 
+age = 19 
+print(age>18 and age<30)
+
+# ANSWER 2
+age = 22
+print(age>11 or age<17)
+
+# ANSWER 3
+age = 19
+print(not age)
+
+# 28////
+print(True and False)
+
+# 29///
+print(True or False)
+
+# 30////
+print(not True)
+"""
+# 31////
+marks = float(input("Enter your marks:"))
+attendence = float(input("Enter your attendence:"))
+
+if marks >= 35.00 and attendence >= 75.00:
+    print("pass:","marks of student",marks,"attendece",attendence)
+else:
+    print("unknow student")
