@@ -288,8 +288,128 @@ if age >=18 and citizen == "yes":
     print("you can vote")
 elif age>=18 or citizen == "no":
     print("can not vote : adult ","not citizen")
-elif age<18 not citizen == "no":
+elif age<=18 and citizen == "no":
     print("cannot vote , minior:","not a citizen")
 else:
     print("unknow id")
+
+# 37////
+a = ["hello","hi"]
+b = a
+print(a is b)
+
+# 38////
+a = [1,2]
+b = a
+print(a is b)
+# ANSWER >: True
+
+# 39////
+# >: the membership operato use to check the value present or not like in or ,not in 
+
+city = ["nashik","niphad","bombay"]
+print("bombay" in city)
+print("pune" not in city)
+
+# 40///
+#Check whether a character exists in a string using in.
+
+words = ["charecters","hello","hi","heyyy"]
+print("charecters" in words)
+
+# 41//
+# check whether a student name exists in a list.
+
+student_names = ["arshil","rohan","rehan","fazal","sana"]
+print("rehan" in student_names)
+
+# 42////
+# BITWISE AND (&)
+a = 6
+b = 7
+print(a & b)
+# BITWISE OR (|)
+a = 3
+b = 4
+print(a|b)
+#BITWISE XOR (^)
+a = 2
+b = 3
+print(a^b)
+#BITWISE RIGHT SHIFT >>
+a = 11
+b = 12
+print(a>>b)
+# BITWISE LEFT SHIFT <<
+a = 4
+b = 5
+print(a<<b)
+
+# 43///
+num1 = int(input("Enter the num1 :"))
+num2 = int(input("Enter the num2 :"))
+print("Entered numbers :",num1,":",num2)
+print(num1 & num2)
+
+# 44////
+num1 = int(input("Enter the num1 :"))
+num2 = int(input("Enter the num2 :"))
+print("Entered numbers :",num1,":",num2)
+print(num1 | num2)
+
+# 45////
+num1 = int(input("Enter the num1 :"))
+num2 = int(input("Enter the num2 :"))
+print("Entered numbers :",num1,":",num2)
+print(num1 ^ num2)
+
+# 46///
+num1 = int(input("Enter the num1 :"))
+num2 = int(input("Enter the num2 :"))
+print("Entered numbers :",num1,":",num2)
+print(num1 >> num2)
+print(num1 << num2)
+
+# 47///
+a = 5
+b = 3
+print(5 & 3)
+print(5 | 3)
+print(5 ^ 3)
+# GUESS THE O/P
+# 1
+# 6
+# 7
 """
+# 48////
+# CREATE THE CALCLUTER PROGRAM 
+
+print("====CALCULATER====")
+print("choise1:","ADDITION")
+print("choise2:","SUBTRACTION")
+print("choise3:","MULTIPLICATION")
+print("choise4:","DIVISON")
+print("choise5:","FLOOR DIVISION")
+print("choise6:","MODULES")
+print("choise7:","EXPONENT")
+print("EXIT")
+
+choise = int(input("Enter your choise"))
+
+num1 = int(input("Enter your num1"))
+num2 = int(input("Enter your num2"))
+
+if choise == 1:
+    print("ADDITION = ",num1+num2)
+elif choise ==2:
+    print("SUBTRACTION =",num1-num2)
+elif choise ==3:
+    print("MULTIPLICATION =",num1*num2)
+elif choice == 4:
+    if num2 != 0:
+        print("Division =", num1 / num2)
+    else:
+        print("Error! Division by zero is not allowed.")
+elif choise ==5:
+    if num2 !=0:
+        print("")
