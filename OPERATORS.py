@@ -97,11 +97,12 @@ print(a // b)
 # ANSWER > the operator is performs the floor division and returns the integer value.
 
 # 17//////
-= (Assignment Operator)
-The = operator is used to assign (store) a value in a variable. 
 
-==(Comparison Operator)
-The == operator is used to compare two values. It returns True if the values are equal, otherwise it returns False.
+#= (Assignment Operator)
+#The = operator is used to assign (store) a value in a variable. 
+
+#==(Comparison Operator)
+#The == operator is used to compare two values. It returns True if the values are equal, otherwise it returns False.
 
 # 18/////
 num = int(input("Enter a number:"))
@@ -445,10 +446,10 @@ else:
 print("="*90)
 print("   OPERATOS DEMONSTRATION SYSTEM ")
 print("="*90)
-"""
+
 num1 = int(input("Enter your frist num1 :"))
 num2 = int(input("Enter your second num2 :"))
-"""
+
 bool1 = input("enter your frist boolean (True/False) :")   == "True"
 bool2 = input("enter your second boolean (True/False) :") == "True"
 
@@ -492,7 +493,7 @@ print("not |",not bool,"|",type(bool1))
 print("="*90)
 print("ASSIGNMENT OPERATORS")
 print("="*90)
-"""
+
 x = num1
 print("orignal value :")
 
@@ -518,4 +519,41 @@ if num2 != 0:
 x **=num2
 print("**= :",x)
 
+print('='*90)
+print('IDENTITY OPERATORS')
+print('='*90)
 
+
+list1 = [1, 2, 3]
+list2 = list1
+list3 = [1, 2, 3]
+
+print("list1 is list2 :", list1 is list2)
+print("list1 is list3 :", list1 is list3)
+print("list1 is not list3 :", list1 is not list3)
+
+print('='*90)
+print("MEMBERSHIP OPERATORS")
+print("="*90)
+
+numbers = [1,2,3,4,5]
+
+print(num1, "in numbers     :", num1 in numbers)
+print(num1, "not in numbers :", num1 not in numbers)
+
+print( "=" * 50)
+print("BITWISE OPERATORS")
+print("=" * 50)
+
+print("&  |", num1 & num2, "|", type(num1 & num2))
+print("|  |", num1 | num2, "|", type(num1 | num2))
+print("^  |", num1 ^ num2, "|", type(num1 ^ num2))
+print("~  |", ~num1, "|", type(~num1))
+print("<< |", num1 << 1, "|", type(num1 << 1))
+print(">> |", num1 >> 1, "|", type(num1 >> 1))
+
+print("=" * 50)
+print("PROGRAM COMPLETED SUCCESSFULLY")
+print("=" * 50)
+
+"""
