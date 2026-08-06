@@ -401,15 +401,33 @@ num2 = int(input("Enter your num2"))
 
 if choise == 1:
     print("ADDITION = ",num1+num2)
+    
 elif choise ==2:
     print("SUBTRACTION =",num1-num2)
+
 elif choise ==3:
     print("MULTIPLICATION =",num1*num2)
+
 elif choice == 4:
     if num2 != 0:
         print("Division =", num1 / num2)
     else:
         print("Error! Division by zero is not allowed.")
+
 elif choise ==5:
-    if num2 !=0:
-        print("")
+    if num2 != 0:
+        print("FLOOR DIVISION =",num1//num2)
+    else:
+        print("Error! Division by zero is not allowed.")
+    
+elif choise ==6:
+    if num2 != 0:
+        print("MODULES =",num1%num2)
+    else:print("Error! Division by zero is not allowed.")
+        
+elif choise ==7:
+    print("EXPONENT =",num1**num2)
+
+else:
+    print("Invalid Choice! Please select a number between 1 and 7.")
+
