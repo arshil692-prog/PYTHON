@@ -380,7 +380,7 @@ print(5 ^ 3)
 # 1
 # 6
 # 7
-"""
+
 # 48////
 # CREATE THE CALCLUTER PROGRAM 
 
@@ -430,4 +430,92 @@ elif choise ==7:
 
 else:
     print("Invalid Choice! Please select a number between 1 and 7.")
+
+
+# 50///
+
+# Create an Operator Demonstration System that:
+
+#  Accepts two numbers from the user.
+#  Displays the results of all Arithmetic, Comparison, Logical (using Boolean inputs),
+#  Assignment (showing each update), Identity, Membership, and Bitwise operators.
+#  Prints the operator used, the expression, the result,
+#  and the resulting data type in a well-formatted output.
+ 
+print("="*90)
+print("   OPERATOS DEMONSTRATION SYSTEM ")
+print("="*90)
+"""
+num1 = int(input("Enter your frist num1 :"))
+num2 = int(input("Enter your second num2 :"))
+"""
+bool1 = input("enter your frist boolean (True/False) :")   == "True"
+bool2 = input("enter your second boolean (True/False) :") == "True"
+
+print("="*90)
+print("ARITHAMATIC OPERATORS")
+print("="*90)
+
+print(" + |",f"{num1}+{num2} = ",num1+num2,"|",type(num1+num2))
+print(" - |",f"{num1}-{num2} = ",num1-num2,"|",type(num1-num2))
+print(" * |",f"{num1}*{num2} = ",num1*num2,"|",type(num1*num2))
+
+if num2 != 0:
+    print(" * |",f"{num1}*{num2} =",num1*num2,"|",type(num1*num2))
+    print(" / |",f"{num1}/{num2} =",num1/num2,"|",type(num1/num2))
+    print("// |",f"{num1}//{num2} =",num1//num2,"|",type(num1//num2))
+    print(" % |",f"{num1}%{num2} =",num1%num2,"|",type(num1%num2))
+else:
+    print("division , floor division and modules not possiable.")
+
+print("** |", f"{num1} ** {num2} =", num1 ** num2, "|", type(num1 ** num2))
+
+print("="*90)
+print("COMPARISION OPERATORS")
+print("="*90)
+
+print(" == |",num1==num2,"|",type(num1==num2))
+print("  > |",num1>num2, "|",type(num1>num2))
+print(" <  |",num1<num2, "|",type(num1<num2))
+print(" >= |",num1>=num2,"|",type(num1>=num2))
+print(" <= |",num1<=num2,"|",type(num1<=num2))
+print(" != |",num1!=num2,"|",type(num1!=num2))
+
+print("="*90)
+print("LOGICAL OPERATORS")
+print("="*90)
+
+print("and |",bool1 and bool2,"|",type(bool1 and bool2))
+print( "or |",bool1 or bool2 ,"|",type(bool1 or bool2))
+print("not |",not bool,"|",type(bool1))
+
+print("="*90)
+print("ASSIGNMENT OPERATORS")
+print("="*90)
+"""
+x = num1
+print("orignal value :")
+
+x +=num2
+print("+= :",x)
+
+x -=num2
+print("-= :",x)
+
+x *=3
+print("*= :",x)
+
+if num2 != 0:
+    x /=num2
+    print("/= :",x)
+
+    x //=2
+    print("//= :",x)
+
+    x %=3
+    print(" %= :",x)
+
+x **=num2
+print("**= :",x)
+
 
