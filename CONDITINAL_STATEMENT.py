@@ -27,3 +27,53 @@
 # | 3   | `if-elif-else`        | Checks multiple conditions               |
 # | 4   | Nested `if`           | An `if` statement inside another `if`    |
 
+# 4////
+#Write the syntax of:
+
+# 1
+if condition:
+    # code to execute
+# 1 EXAMPLE
+age = 20
+
+if age >= 18:
+    print("You are eligible to vote")
+
+# 2
+if condition:
+    # code when condition is True
+else:
+    # code when condition is False
+    
+# EXAMPLE
+age = 16
+
+if age >= 18:
+    print("You are eligible to vote")
+else:
+    print("You are not eligible to vote")
+
+# 3
+if condition1:
+    # code when condition1 is True
+
+elif condition2:
+    # code when condition2 is True
+
+elif condition3:
+    # code when condition3 is True
+
+else:
+    # code when all conditions are False
+
+# EXAMPLE
+marks = 75
+
+if marks >= 90:
+    print("Grade A")
+elif marks >= 75:
+    print("Grade B")
+elif marks >= 50:
+    print("Grade C")
+else:
+    print("Fail")
