@@ -18,4 +18,12 @@
 # This is exactly how a conditional statement works—it checks a condition first and then decides which action to perform.
 
 # 3////
-#
+# List all conditional statements available in Python.
+
+# | No. | Conditional Statement | Purpose                                  |
+# | --- | --------------------- | ---------------------------------------- |
+# | 1   | `if`                  | Executes code when a condition is `True` |
+# | 2   | `if-else`             | Chooses between two possibilities        |
+# | 3   | `if-elif-else`        | Checks multiple conditions               |
+# | 4   | Nested `if`           | An `if` statement inside another `if`    |
+
