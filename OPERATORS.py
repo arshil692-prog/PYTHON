@@ -548,12 +548,13 @@ print("=" * 50)
 print("&  |", num1 & num2, "|", type(num1 & num2))
 print("|  |", num1 | num2, "|", type(num1 | num2))
 print("^  |", num1 ^ num2, "|", type(num1 ^ num2))
-print("~  |", ~num1, "|", type(~num1))
-print("<< |", num1 << 1, "|", type(num1 << 1))
-print(">> |", num1 >> 1, "|", type(num1 >> 1))
+print("~  |", ~num1, "      |", type(~num1))
+print("<< |", num1 << 1, "  |", type(num1 << 1))
+print(">> |", num1 >> 1, "  |", type(num1 >> 1))
 
 print("=" * 50)
 print("PROGRAM COMPLETED SUCCESSFULLY")
 print("=" * 50)
 
 """
+
